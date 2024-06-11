@@ -33,15 +33,19 @@ const recipesPerPage: CollectionEntry<'recipes'>[] = allRecipes.slice(
               <h1
                 class="text-balance text-2xl font-bold text-dark tracking-tight md:text-3xl lg:text-4xl xl:text-5xl"
               >
-                Explore, cook, and cherish recipes co-created by our global
-                community of food enthusiasts.
+                Hellu, đây là CookBook của Hiền Tiên. Nơi mà tớ lưu giữ công thức của các món ngon đã làm 
               </h1>
+              <h4
+                class="text-balance text-2xl font-bold text-dark tracking-tight  md:text-2xl lg:text-2xl xl:text-2xl"
+              >
+                cô bếp trưởng ✨->
+              </h4>
             </div>
             <!-- content - end -->
 
             <!-- image - start -->
             <div class="hidden lg:flex lg:w-3/12">
-              <Icon class="h-full w-full" name="placeholder" />
+              <img class="h-full w-full" src="src/images/a.jpg" name="placeholder" />
             </div>
             <!-- image - end -->
           </section>
@@ -53,14 +57,7 @@ const recipesPerPage: CollectionEntry<'recipes'>[] = allRecipes.slice(
       <div
         class={`flex flex-col ${currentPage === 1 ? "" : "mt-20"} gap-2.5 sm:flex-row sm:justify-center lg:justify-end`}
       >
-      <a
-                  class="group inline-flex items-center justify-center gap-x-3 rounded-xl bg-secondary-accent px-8 py-3 text-center font-medium text-orange-900 outline-none transition duration-300 hover:bg-secondary focus-visible:-translate-y-1 text-base 2xl:text-lg"
-                  href="https://github.com/mearashadowfax/OpenStove"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Add a Recipe
-                <Icon name="github-body" class="h-5 w-5 transition duration-300 group-hover:-translate-y-1 group-focus-visible:-translate-y-1" />  
-                </a>
+      
         <a
           class="group inline-flex items-center justify-center gap-x-3 rounded-xl bg-primary px-8 py-3 text-center  font-medium text-[#422006] outline-none transition duration-300 hover:shadow-2xl hover:shadow-primary  focus-visible:-translate-y-1 text-base 2xl:text-lg"
           href="/recipes/saved"
